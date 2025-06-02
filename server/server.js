@@ -5,7 +5,8 @@ const pool = require('./db')
 
 app.get('/todos', (req, res) => {
     try {
-        // await
+        const todos = await pool.query('SELECT * FROM todos')
+        res.json(todos.rows)
     } catch (err) {
         console.error(err)
     }
