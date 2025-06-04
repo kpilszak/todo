@@ -3,13 +3,18 @@ import ProgressBar from './ProgressBar'
 
 const ListItem = ({ task }) => {
     return (
-        <div class="list-item">
+        <li class="list-item">
             <div className="info-container">
                 <TickIcon/>
                 <p className="task-title">{ task.title }</p>
                 <ProgressBar/>
             </div>
-        </div>
+
+            <div className="button-container">
+                <button className="edit">EDIT</button>
+                <button className="delete">DELETE</button>
+            </div>
+        </li>
     )
 }
 
