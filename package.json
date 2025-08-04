@@ -8,6 +8,8 @@
     "client": "cd client && npm start"
   },
   "dependencies": {
-    "if-env": "^1.0.4"
+    "dotenv": "^17.2.1",
+    "if-env": "^1.0.4",
+    "react-cookie": "^8.0.1"
   }
 }
